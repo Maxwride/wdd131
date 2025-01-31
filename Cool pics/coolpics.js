@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         button.classList.add("hide");
       }
     }
+    /* comment */
   
     handleResize();
     window.addEventListener("resize", handleResize);
