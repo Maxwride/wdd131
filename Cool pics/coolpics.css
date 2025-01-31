@@ -12,6 +12,9 @@ header {
     color: white;
     text-align: center;
 }
+.show{
+    display: block;
+}
 button{
     color: white;
     background-color: transparent;
@@ -19,11 +22,15 @@ button{
     font-size: 1.3em;
     justify-self: end;
 }
-nav{
+.menu{
     text-align: center;
-    display: flex;
-    justify-content: space-around;
+    /* display: flex;
+    justify-content: space-around; */
     color: white;
+    display: none;
+}
+a{
+    display: block;
 }
 a:visited {
     color: white;
@@ -88,9 +95,7 @@ img {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1em;
     }
-    a {
-        display: none;
-    }
+   
 }
 
 @media screen and (min-width: 1000px) {
@@ -99,7 +104,11 @@ img {
         grid-template-columns: 1fr 1fr 1fr;
     }
     a {
-        display: none;
+        display: inline;
+        padding: 20px;
+    }
+    .menu{
+        display: block;
     }
     button {
         display: none;
