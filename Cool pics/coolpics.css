@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
+
+body {
+    font-family: Roboto, sans-serif;
+}
+header {
+    max-width: 100%;
+    margin: 1rem auto;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #52489c;
+    color: white;
+    text-align: center;
+}
+nav{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+a:visited {
+    color: white;
+}
+footer{
+    max-width: 100%;
+    margin: 1rem auto;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #52489c;
+    color: white;
+}
+main {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+section {
+    background-color: white;
+    padding left: 5px;
+    max-height: 50%;
+}
+img {
+    height: 250px;
+    object-fit: cover;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {  /* Adjust this value as needed */
+    gap: 0;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    box-shadow: 5px 5px 15px black;
+    border: solid 5px white;
+    margin: 30px auto;
+}
+
+@media screen and (min-width: 700px) {
+    .big gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+    }
+    a {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .big-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    a {
+        display: none;
+    }
+    button {
+        display: none;
+    }
+}
+
+
