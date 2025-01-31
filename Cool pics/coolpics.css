@@ -12,6 +12,13 @@ header {
     color: white;
     text-align: center;
 }
+button{
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 1.3em;
+    justify-self: end;
+}
 nav{
     text-align: center;
     display: flex;
@@ -35,7 +42,7 @@ main {
 }
 section {
     background-color: white;
-    padding left: 5px;
+    padding-left: 5px;
     max-height: 50%;
 }
 img {
@@ -46,6 +53,25 @@ img {
     padding: 0;
 }
 
+.viewer{
+    display: grid;
+    grid-template-columns: 1fr;
+    position: fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color:rgba(0, 0, 0, 0.75);
+}
+.close-viewer {
+    color: white;
+    grid-row: 1/2;
+    justify-self: end;
+}
+.viewer img{
+    grid-row: 2/3;
+    justify-self: center;
+}
 .gallery {  /* Adjust this value as needed */
     gap: 0;
     overflow: hidden;
@@ -77,6 +103,13 @@ img {
     }
     button {
         display: none;
+    }
+    .viewer{
+        margin: 50px;
+        padding: 50px;
+    }
+    .viewer img {
+        max-width: 800px;
     }
 }
 
