@@ -3,26 +3,26 @@ menuButton.addEventListener("click", toggleMenu);
 function toggleMenu() { 
   const menu = document.querySelector(".menu");
   console.log(menu);
-  menu.classList.toggle("show");
+  menu.classList.toggle("hide");
 }
 
 
 
 
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     function handleResize() {
-//       const button = document.querySelector(".menu");
-//       if (window.innerWidth > 1000) {
-//         button.classList.remove("show");
-//       } else {
-//         button.classList.add("show");
-//       }
-//     }
+document.addEventListener('DOMContentLoaded', function () {
+    function handleResize() {
+      const button = document.querySelector(".menu");
+      if (window.innerWidth > 1000) {
+        button.classList.remove("hide");
+      } else {
+        button.classList.add("hide");
+      }
+    }
     
   
-//     handleResize();
-//     window.addEventListener("resize", handleResize);
+    handleResize();
+    window.addEventListener("resize", handleResize);
   
     function viewerTemplate(pic, alt) {
       return `<div class="viewer">
@@ -48,6 +48,6 @@ function toggleMenu() {
     document.querySelectorAll('.gallery img').forEach(img => {
       img.addEventListener('click', viewHandler);
     });
-
+  });
   
   
