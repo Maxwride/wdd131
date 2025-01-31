@@ -12,8 +12,8 @@ header {
     color: white;
     text-align: center;
 }
-.show{
-    display: block;
+.menu.hide{
+    display: none;
 }
 button{
     color: white;
@@ -27,7 +27,7 @@ button{
     /* display: flex;
     justify-content: space-around; */
     color: white;
-    display: none;
+    display: block;
 }
 a{
     display: block;
