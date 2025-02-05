@@ -1,0 +1,72 @@
+:root {
+    --Title-Color: #AF1B3F;
+    --Font-Color: #473144;
+    --Border-Color: #EFC69B;
+    --Body-Style: Helvetica, Arial, sans-serif;
+    --Headline-Font: Lora, Impact, serif;
+}
+.top-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: var(--Headline-Font);
+    background-color: var(--Border-Color);
+    align-items: center;
+}
+h1 {
+    grid-column: 1;
+    color: var(--Font-Color);
+    padding-left: 30px;
+}
+nav {
+    grid-column: 3;
+    color: var(--Title-Color);
+    text-align: left;
+}
+nav a {
+    margin: 15px;
+}
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
+    margin-top: 40px;
+    font-family: var(--Body-Style);
+}
+.filters {
+    grid-column: 3;
+    grid-row: 1;
+    border:2px solid var(--Border-Color);
+    padding: 10px;
+    text-align: right;
+}
+.filters p {
+    border: 2px solid black;
+    display: inline;
+}
+.information {
+    grid-column: 1;  
+    border-right: 2px solid var(--Border-Color);  
+}
+#book1info, .book1 {
+    grid-row: 1;
+}
+#book2info, .book2 {
+    grid-row: 2;
+
+}
+#book3info, .book3 {
+    grid-row: 3;
+}
+.books {
+    grid-column: 2;
+}
+.books, .information {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+img {
+    width: 225px;
+    height: auto;
+}
