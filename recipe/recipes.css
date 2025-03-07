@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+ :root {
+ --primary-color: #1B98E0;
+ --secondary-color: #59c3c3;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: Arial, Helvetica,sans-serif;
+ --secondary-font: "Amatic SC";
+ }
+ header{
+    text-align: center;
+ }
+ header img{
+    width: 100px;
+    display: inline-block;
+ }
+h1{
+    font-size: 3em;
+    display: inline-block;
+    font-family: "Amatic SC";
+}
+h3{
+    font-size: 2em;
+    font-family: var(--secondary-font);
+}
+.apple-crisp img{
+    width: 400px;
+}
+.dessert-content{
+    padding-left: 10px;
+}
+.dessert-content p{
+    display: none;
+}
+.dessert-content button{
+    margin-top: 20px;
+}
+.search-container input,button{
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.search-container {
+    display: grid;
+    grid-template-columns: 1fr auto; 
+    width: 100%; 
+  }
+
+.recipe{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+.recipe img{
+    padding: 10px;
+}
+.links-and-social {
+    justify-content: space-between;
+  }
+  footer{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 50px;
+    align-items: center;
+  }
+/* .social {
+    gap: 10px;
+    margin: 20px auto;
+  }
+  .link{
+    gap: 20px;
+    text-align: center;
+
+  } */
+  .social img {
+    width: 50px;
+  }
+@media screen and (min-width: 900px){
+    .recipe{
+        flex-direction: row;
+
+    }
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .dessert-content p{
+        display: block;
+    }
+    /* .social {
+        justify-content: right;
+    }
+    .link{
+        justify-content: left;
+    } */
+}
