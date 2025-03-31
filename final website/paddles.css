@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+header{
+   display:flex;
+    text-align: center;
+    background-color: #1ED943;
+   justify-content: space-between;
+   align-items: center;
+ }
+ header nav{
+   display: flex;
+   justify-content: flex-end;
+   padding-right: 10px;
+   justify-content: space-between;
+ }
+header nav a{
+   color: black;
+   font-family: Boldonse;
+   padding: 10px;
+}
+ header img{
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 15px;
+   margin-left: 10px;
+ }
+
+ body{
+   margin: 0;
+   padding: 0;
+ }
+ h1{
+   font-size: 3em;
+   display: inline-block;
+   font-family: Boldonse, sans-serif;
+}
+.content1{
+   margin: 10px;
+   border:2px solid black;
+   padding: 10px;
+   border-radius: 15px;
+}
+.content2{
+   margin: 10px;
+   border:2px solid black;
+   padding: 10px;
+   border-radius: 15px;
+}
+.search input,button{
+   height: 20px;
+   border: 2px solid black;
+   border-radius: 15px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.search-img{
+ width: 400px;
+ margin-top: 10px;
+ border: 2px solid black;
+ border-radius: 15px;
+ 
+}
+h3{
+font-family: "Playfair Display";
+}
+footer{
+    text-align: center;
+    background-color: #1ED943;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 47px;
+    font-family: "Playfair Display", "sans-serif";
+}
