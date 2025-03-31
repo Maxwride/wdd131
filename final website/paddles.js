@@ -82,9 +82,11 @@ function paddleTemplate(paddle) {
                     ${tagsTemplate(paddle.tags)}
                 </div>
                 <h3>${paddle.name}</h3>
+                <div class= "rating-container">
                 <span class="rating" role="img" aria-label="Rating: ${paddle.rating} out of 5 stars">
                     ${ratingTemplate(paddle.rating)}
                 </span>
+                </div>
                 <p>${paddle.description}</p>
                 ${paddle.url ? `<a href="${paddle.url}" target="_blank" rel="noopener noreferrer" class="paddle-link button-style">View Details</a>` : ''}
             </div>
